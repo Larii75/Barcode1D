@@ -1,0 +1,91 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.w3.org/1999/xlink" elementFormQualified="false" attributeFormQualified="false">
+	<import namespace="http://www.w3.org/XML/1998/namespace"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="arc" type="d2p1:arcType" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="locator" type="d2p1:locatorType" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="resource" type="d2p1:resourceType" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="title" type="d2p1:titleEltType" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="actuate" type="d2p1:actuateType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="arcrole" type="d2p1:arcroleType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="from" type="d2p1:fromType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="href" type="d2p1:hrefType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="label" type="d2p1:labelType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="role" type="d2p1:roleType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="show" type="d2p1:showType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="title1" type="d2p1:titleAttrType" form="Attribute" localName="title" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="to" type="d2p1:toType" form="Attribute" d2p2:qualified="true"/>
+	<d2p2:property xmlns:d2p1="http://www.w3.org/1999/xlink" xmlns:d2p2="http://v8.1c.ru/8.1/xdto" name="type" type="d2p1:typeType" form="Attribute" d2p2:qualified="true"/>
+	<valueType name="actuateType" base="xs:token" variety="Atomic">
+		<enumeration>onLoad</enumeration>
+		<enumeration>onRequest</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>none</enumeration>
+	</valueType>
+	<valueType name="arcroleType" base="xs:anyURI" variety="Atomic" minLength="1"/>
+	<valueType name="fromType" base="xs:NCName" variety="Atomic"/>
+	<valueType name="hrefType" base="xs:anyURI" variety="Atomic"/>
+	<valueType name="labelType" base="xs:NCName" variety="Atomic"/>
+	<valueType name="roleType" base="xs:anyURI" variety="Atomic" minLength="1"/>
+	<valueType name="showType" base="xs:token" variety="Atomic">
+		<enumeration>new</enumeration>
+		<enumeration>replace</enumeration>
+		<enumeration>embed</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>none</enumeration>
+	</valueType>
+	<valueType name="titleAttrType" base="xs:string" variety="Atomic"/>
+	<valueType name="toType" base="xs:NCName" variety="Atomic"/>
+	<valueType name="typeType" base="xs:token" variety="Atomic">
+		<enumeration>simple</enumeration>
+		<enumeration>extended</enumeration>
+		<enumeration>title</enumeration>
+		<enumeration>resource</enumeration>
+		<enumeration>locator</enumeration>
+		<enumeration>arc</enumeration>
+	</valueType>
+	<objectType name="arcType">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:arcrole" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title1" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:show" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:actuate" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:from" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:to" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="extended" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:role" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title1" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:resource" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:locator" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:arc" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="locatorType">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:href" lowerBound="1"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:role" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title1" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:label" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="resourceType" open="true" mixed="true" sequenced="true">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:role" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title1" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:label" lowerBound="0"/>
+	</objectType>
+	<objectType name="simple" open="true" mixed="true" sequenced="true">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:href" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:role" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:arcrole" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:title1" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:show" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:actuate" lowerBound="0"/>
+	</objectType>
+	<objectType name="titleEltType" open="true" mixed="true" sequenced="true">
+		<property xmlns:d3p1="http://www.w3.org/1999/xlink" ref="d3p1:type" lowerBound="0"/>
+		<property ref="xml:lang" lowerBound="0"/>
+	</objectType>
+</package>

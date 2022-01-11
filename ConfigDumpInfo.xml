@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<ConfigVersions>
+		<Metadata name="CommonModule.Шк_Barcode1D_КлиентСервер" id="2b6d125a-17bc-4d0f-bfe9-b84da6777296" configVersion="6f925a5817fe204bbdb915aaf06a764600000000"/>
+		<Metadata name="CommonModule.Шк_Barcode1D_КлиентСервер.Module" id="2b6d125a-17bc-4d0f-bfe9-b84da6777296.0" configVersion="ca7d55eabf33134eb0ab779c453043a500000000"/>
+		<Metadata name="CommonModule.Шк_Barcode1D_Сервер" id="43aa2209-c277-4749-af77-a4b5a114b6e3" configVersion="68ef1589d90a7a47ab616fa33123e2f600000000"/>
+		<Metadata name="CommonModule.Шк_Barcode1D_Сервер.Module" id="43aa2209-c277-4749-af77-a4b5a114b6e3.0" configVersion="05ee7e38fef0c747aefa16df6bf26a7c00000000"/>
+		<Metadata name="CommonModule.Шк_Barcode1D_СерверПовтИсп" id="29d9711b-3f8b-4e31-9777-b365b6fef34d" configVersion="f46e43b0bf3c1446ab3936e5e74c731700000000"/>
+		<Metadata name="CommonModule.Шк_Barcode1D_СерверПовтИсп.Module" id="29d9711b-3f8b-4e31-9777-b365b6fef34d.0" configVersion="541ea43b5594ca41acbd3805da83abd800000000"/>
+		<Metadata name="Configuration.Конфигурация" id="c306ca45-1046-4625-bb80-f9f254ea0474" configVersion="e631ed89d50b2e42b7b1a60931c0d3f100000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="28e9ee05-328f-4e6d-9844-9b8f6c45c4b3.8" configVersion="e42b47200f82944e84592c26c2d033ff00000000"/>
+		<Metadata name="DataProcessor.Шк_ГенерацияШтрихкодов1D" id="deb6db13-08a8-49e1-9280-1680e8fd9c7d" configVersion="41326d7df04de24398d56b3d064d839f00000000"/>
+		<Metadata name="DataProcessor.Шк_ГенерацияШтрихкодов1D.Form.Форма" id="6ccf9d01-86ac-4a7f-971d-e890f7e496eb" configVersion="600bc8f8edc06948a10fdc4e7921ec4a00000000"/>
+		<Metadata name="DataProcessor.Шк_ГенерацияШтрихкодов1D.Form.Форма.Form" id="6ccf9d01-86ac-4a7f-971d-e890f7e496eb.0" configVersion="c675fc6d5a22e342830ff5be3b34811e00000000"/>
+		<Metadata name="Language.Русский" id="4e358b8e-25a9-4cfe-9b4e-9edd2b944245" configVersion="471b7b13a1c7564ba9c2eb160074259800000000"/>
+		<Metadata name="Subsystem.Шк_Barcode1D" id="6154b8d5-4f61-4ce3-aa28-190f0fa6579c" configVersion="86685e8ac406c6469dc007f387a35d6700000000"/>
+		<Metadata name="XDTOPackage.Шк_namespace" id="82c040e9-c620-4ad4-a0e2-07831258350d" configVersion="a317f4b13f8e0144b71f359dda14777600000000"/>
+		<Metadata name="XDTOPackage.Шк_namespace.Package" id="82c040e9-c620-4ad4-a0e2-07831258350d.0" configVersion="77294aa362d0db468a058a9b17cb979000000000"/>
+		<Metadata name="XDTOPackage.Шк_svg" id="8f536182-bbcd-4bb0-8f74-c35785ade80a" configVersion="f84b7b6ae1efd34e91c2a18c56880aec00000000"/>
+		<Metadata name="XDTOPackage.Шк_svg.Package" id="8f536182-bbcd-4bb0-8f74-c35785ade80a.0" configVersion="1f6a7947bfc9594baa63fb1b45e6f04a00000000"/>
+		<Metadata name="XDTOPackage.Шк_xlink" id="9533c1e3-f9b6-49aa-bfaf-7c1c0e37cbc6" configVersion="e9a2e405c368a242889f0b8fd4de1a8100000000"/>
+		<Metadata name="XDTOPackage.Шк_xlink.Package" id="9533c1e3-f9b6-49aa-bfaf-7c1c0e37cbc6.0" configVersion="443be2712ce2eb40bd4b72c587a38a7600000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
